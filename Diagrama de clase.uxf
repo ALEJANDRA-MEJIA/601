@@ -1,0 +1,49 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><help_text></help_text><element><id>UMLClass</id><coordinates><x>280</x><y>30</y><w>210</w><h>190</h></coordinates><panel_attributes>SETUP
+--
+-Creeper: new
+-Fondo: new
+-Linea: new
+--
+#Zombie: new
+#puntos_contador: new
+#puntos: int
+--
++setup()
++actualiza_punto()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>280</x><y>280</y><w>210</w><h>200</h></coordinates><panel_attributes>CREEPER
+--
+-vel: int
+-dir: int
+-lim_der: int
+-lim_izq: int
+-t_cambia: int
+-dado: int
+-t_lanzar: Timer
+--
++Creeper ()
++actualiza ()
++cambia_dir ()
++lanzar_fuego ()
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>370</x><y>210</y><w>30</w><h>80</h></coordinates><panel_attributes>lt=&lt;.
+</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element><element><id>UMLClass</id><coordinates><x>50</x><y>280</y><w>210</w><h>110</h></coordinates><panel_attributes>DINAMITA
+--
+-Vel: int
+-a: int
+--
++Dinamita ()
++mover ()
++actualiza ()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>510</x><y>280</y><w>210</w><h>160</h></coordinates><panel_attributes>ZOMBIE
+--
+-Der: Boolean
+-izq: Boolean
+-vel: int
+--
++Zombie ()
++motor ()
++controles ()
++keydown ()
++keyup ()
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>420</x><y>210</y><w>220</w><h>90</h></coordinates><panel_attributes>lt=&lt;.
+</panel_attributes><additional_attributes>10;10;10;40;200;40;200;70</additional_attributes></element><element><id>Relation</id><coordinates><x>130</x><y>210</y><w>230</w><h>90</h></coordinates><panel_attributes>lt=&lt;.
+</panel_attributes><additional_attributes>210;10;210;40;10;40;10;70</additional_attributes></element><element><id>Relation</id><coordinates><x>240</x><y>330</y><w>60</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..n</panel_attributes><additional_attributes>40;10;20;10</additional_attributes></element></diagram>
